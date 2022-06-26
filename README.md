@@ -8,7 +8,7 @@
 
 #### Description
 
-+ React material(v.4) pagination
++ React material(v.4) pagination  (>= 4.11.3)
 
 ---
 
@@ -28,21 +28,22 @@ import Pagination from 'react-material-pagination-v4z'
 ##### `simple`
 
 ```js
-    const [page, setPage] = React.useState(1) //
+    const [page, setPage] = React.useState(1)
 
-    <ReactPagination
+    <Pagination
         // className
         totalCount={100}
         // limit={10}
-        // labelFirst="First"
+        // labelFirst="|<<"
         // labelLast="Last"
         // sectionNumber={5} // display number of page
         currentPage={page}
         setCurrentPage={setPage}
-        // showFirstLast
+        // showFirstLast // ={true}
+		// showForwardBack // ={false}
     />
 
-    <ReactPagination
+    <Pagination
         // className
         totalCount={100}
         // limit={10}

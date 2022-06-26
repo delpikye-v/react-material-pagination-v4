@@ -7,11 +7,12 @@ interface IPaginationProps {
     currentPage: number;
     sectionNumber?: number;
     type?: "default" | "pager";
-    labelFirst?: string;
-    labelLast?: string;
-    labelBack?: string;
-    labelForward?: string;
+    labelFirst?: string | React.ReactNode;
+    labelLast?: string | React.ReactNode;
+    labelBack?: string | React.ReactNode;
+    labelForward?: string | React.ReactNode;
     showFirstLast?: boolean;
+    showForwardBack?: boolean;
     hideFirstLastIfActive?: boolean;
     setCurrentPage: (number: any) => any;
 }
